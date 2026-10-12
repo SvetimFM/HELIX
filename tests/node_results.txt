@@ -1,0 +1,92 @@
+
+> helix-experience-grammar@0.4.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: alphabet implements all declared operators as typed relations
+ok 1 - alphabet implements all declared operators as typed relations
+  ---
+  duration_ms: 1.514006
+  type: 'test'
+  ...
+# Subtest: canonical round-trip: 2,000 shuffled equivalent documents
+ok 2 - canonical round-trip: 2,000 shuffled equivalent documents
+  ---
+  duration_ms: 341.992751
+  type: 'test'
+  ...
+# Subtest: malformed and mismatched types rejected
+ok 3 - malformed and mismatched types rejected
+  ---
+  duration_ms: 0.928946
+  type: 'test'
+  ...
+# Subtest: overlays of shared ontology obey ACI laws on symbolic facts
+ok 4 - overlays of shared ontology obey ACI laws on symbolic facts
+  ---
+  duration_ms: 1.0903
+  type: 'test'
+  ...
+# Subtest: view projections are idempotent and preserve only authored facts
+ok 5 - view projections are idempotent and preserve only authored facts
+  ---
+  duration_ms: 0.819552
+  type: 'test'
+  ...
+# Subtest: focus distributes over overlay with same declarations
+ok 6 - focus distributes over overlay with same declarations
+  ---
+  duration_ms: 0.597609
+  type: 'test'
+  ...
+# Subtest: abstraction changes representational target without inventing facts
+ok 7 - abstraction changes representational target without inventing facts
+  ---
+  duration_ms: 0.983789
+  type: 'test'
+  ...
+# Subtest: coverage exposes missing facts but does not infer them
+ok 8 - coverage exposes missing facts but does not infer them
+  ---
+  duration_ms: 0.474894
+  type: 'test'
+  ...
+# Subtest: local-to-global gluing distinguishes unique/ambiguous/inconsistent
+ok 9 - local-to-global gluing distinguishes unique/ambiguous/inconsistent
+  ---
+  duration_ms: 0.439741
+  type: 'test'
+  ...
+# Subtest: locally satisfiable odd cycle has no global assignment
+ok 10 - locally satisfiable odd cycle has no global assignment
+  ---
+  duration_ms: 0.443446
+  type: 'test'
+  ...
+# Subtest: open worlds remain open under sonification
+ok 11 - open worlds remain open under sonification
+  ---
+  duration_ms: 0.654454
+  type: 'test'
+  ...
+# Subtest: untrusted JSON cannot inject arbitrary unknown keys into model
+ok 12 - untrusted JSON cannot inject arbitrary unknown keys into model
+  ---
+  duration_ms: 0.280052
+  type: 'test'
+  ...
+# Subtest: projection removes out-of-scope quoted statements without dangling fact references
+ok 13 - projection removes out-of-scope quoted statements without dangling fact references
+  ---
+  duration_ms: 0.805602
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 427.638999

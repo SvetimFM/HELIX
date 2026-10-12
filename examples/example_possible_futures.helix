@@ -1,0 +1,13 @@
+⟦ HMX1
+◉ "A situated consciousness"
+◇ "Contradictory futures resonate"
+∴ "The chord can voice incompatible possibilities without collapsing them to one future."
+⌖ 0
+◆ {"id":"history","label":"Earlier promise","t":-3,"stance":"remembered","branch":"shared","level":"concrete","valence":0.7,"salience":0.7}
+◆ {"id":"part","label":"We part ways","t":3,"stance":"feared","branch":"B","level":"concrete","valence":-0.9,"salience":0.83}
+◆ {"id":"stay","label":"We stay together","t":3,"stance":"desired","branch":"A","level":"concrete","valence":0.9,"salience":0.86}
+◆ {"id":"uncertainty","label":"I cannot know","t":0,"stance":"present","branch":"shared","level":"abstract","valence":0,"salience":0.99}
+↦ {"from":"history","to":"uncertainty","kind":"echoes"}
+↦ {"from":"uncertainty","to":"part","kind":"anticipates"}
+↦ {"from":"uncertainty","to":"stay","kind":"anticipates"}
+⟧

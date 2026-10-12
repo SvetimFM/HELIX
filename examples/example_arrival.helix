@@ -1,0 +1,17 @@
+⟦ HMX1
+◉ "A person choosing love"
+◇ "Loving despite anticipated loss"
+∴ "A present choice holds memory, love, and possible loss without demanding foreknowledge."
+⌖ 0
+◆ {"id":"choose","label":"Choose to love","t":0,"stance":"chosen","branch":"shared","level":"concrete","valence":0.75,"salience":1}
+◆ {"id":"joy","label":"Possible flourishing","t":3,"stance":"desired","branch":"A","level":"concrete","valence":0.9,"salience":0.87}
+◆ {"id":"loss","label":"Possible loss","t":3,"stance":"feared","branch":"B","level":"concrete","valence":-0.85,"salience":0.8}
+◆ {"id":"meet","label":"We meet","t":-4,"stance":"remembered","branch":"shared","level":"concrete","valence":0.65,"salience":0.72}
+◆ {"id":"whole","label":"Love under uncertainty","t":0,"stance":"present","branch":"shared","level":"abstract","valence":0.4,"salience":0.94}
+◆ {"id":"wonder","label":"Possibility of closeness","t":-2,"stance":"remembered","branch":"shared","level":"abstract","valence":0.9,"salience":0.57}
+↦ {"from":"choose","to":"joy","kind":"anticipates"}
+↦ {"from":"choose","to":"loss","kind":"anticipates"}
+↦ {"from":"choose","to":"whole","kind":"instantiates"}
+↦ {"from":"meet","to":"choose","kind":"echoes"}
+↦ {"from":"wonder","to":"whole","kind":"instantiates"}
+⟧

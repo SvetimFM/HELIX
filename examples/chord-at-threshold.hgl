@@ -1,0 +1,32 @@
+⟦ HGL1
+TITLE "The chord at the threshold"
+NOW 0
+● {"id":"arrival","sort":"event","label":"A shared future is built","time":3,"valence":0.9,"salience":0.9}
+● {"id":"attempt","sort":"event","label":"Building in the present","time":0,"valence":0.4,"salience":1}
+● {"id":"community","sort":"entity","label":"The community"}
+● {"id":"futureA","sort":"world","label":"Possible continuation A"}
+● {"id":"futureB","sort":"world","label":"Possible continuation B"}
+● {"id":"hope","sort":"quality","label":"Hope"}
+● {"id":"meaning","sort":"event","label":"Making something possible","time":0,"valence":0.6,"salience":0.9}
+● {"id":"seed","sort":"event","label":"An idea appears","time":-3,"valence":0.7,"salience":0.8}
+● {"id":"self","sort":"observer","label":"A person choosing to create"}
+● {"id":"silence","sort":"event","label":"The idea remains unshared","time":3,"valence":-0.7,"salience":0.65}
+◆ {"id":"f01","op":"BEFORE","args":["seed","attempt"],"attrs":{}}
+◆ {"id":"f02","op":"BEFORE","args":["attempt","arrival"],"attrs":{},"world":"futureA"}
+◆ {"id":"f03","op":"BEFORE","args":["attempt","silence"],"attrs":{},"world":"futureB"}
+◆ {"id":"f04","op":"CAUSES","args":["seed","attempt"],"attrs":{},"observer":"self"}
+◆ {"id":"f05","op":"ANTICIPATES","args":["self","arrival"],"attrs":{},"world":"futureA"}
+◆ {"id":"f06","op":"ANTICIPATES","args":["self","silence"],"attrs":{},"world":"futureB"}
+◆ {"id":"f07","op":"IN_WORLD","args":["arrival","futureA"],"attrs":{}}
+◆ {"id":"f08","op":"IN_WORLD","args":["silence","futureB"],"attrs":{}}
+◆ {"id":"f09","op":"ROLE","args":["arrival","community"],"attrs":{"role":"beneficiary"}}
+◆ {"id":"f10","op":"QUALITY","args":["attempt","hope"],"attrs":{}}
+◆ {"id":"f11","op":"AFFECT","args":["self","attempt"],"attrs":{"valence":0.4,"arousal":0.8}}
+◆ {"id":"f12","op":"POSSIBLE","args":["self","futureA"],"attrs":{}}
+◆ {"id":"f13","op":"POSSIBLE","args":["self","futureB"],"attrs":{}}
+◆ {"id":"f14","op":"ASSOCIATES","args":["seed","meaning"],"attrs":{}}
+◆ {"id":"f15","op":"UNCERTAIN","args":["self","f05"],"attrs":{"confidence":0.5}}
+⌖ {"id":"inner","observer":"self","worlds":[],"include":[],"kinds":[]}
+⌖ {"id":"possibilityA","observer":"self","worlds":["futureA"],"include":[],"kinds":[]}
+↑ {"id":"a1","specific":"attempt","general":"meaning"}
+⟧

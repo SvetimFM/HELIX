@@ -1,0 +1,128 @@
+{
+  "app": "HĒLIX Instrument for Thought v0.3",
+  "experiment": "two musical realizations and alternate futures of the same symbolic scene",
+  "runs": [
+    {
+      "name": "Rendition_I_Glass_C3_84",
+      "semantic_id": "8d6efda9",
+      "instrument": "glass",
+      "scale": "major",
+      "root_midi": 48,
+      "tempo_bpm": 84,
+      "branch": "whole",
+      "notes": 6,
+      "pitches": [
+        54,
+        61,
+        47,
+        54,
+        69,
+        67
+      ],
+      "peak_before_normalization": 0.2929862528944355,
+      "duration_seconds": 7.045,
+      "mp3_sha256": "595792c5195b16a48d47ad37b5358b448a33e4fab71c8c2d7e85bfca019a433f"
+    },
+    {
+      "name": "Rendition_II_Warm_G3_112",
+      "semantic_id": "8d6efda9",
+      "instrument": "warm",
+      "scale": "major",
+      "root_midi": 55,
+      "tempo_bpm": 112,
+      "branch": "whole",
+      "notes": 6,
+      "pitches": [
+        61,
+        68,
+        54,
+        61,
+        76,
+        74
+      ],
+      "peak_before_normalization": 0.2773288442477505,
+      "duration_seconds": 5.70875,
+      "mp3_sha256": "766f70373d9cbc39b849d77f6ecdfebf859b0dea540226e6e3714d636b81d5aa"
+    },
+    {
+      "name": "Future_A",
+      "semantic_id": "8d6efda9",
+      "instrument": "glass",
+      "scale": "major",
+      "root_midi": 48,
+      "tempo_bpm": 84,
+      "branch": "A",
+      "notes": 5,
+      "pitches": [
+        54,
+        61,
+        54,
+        69,
+        67
+      ],
+      "peak_before_normalization": 0.24018231391833533,
+      "duration_seconds": 7.045,
+      "mp3_sha256": "c886504865bdc633ca6bdfa7b5c987d0f7314aaf5d31c5f2835f8e789d4b6188"
+    },
+    {
+      "name": "Future_B",
+      "semantic_id": "8d6efda9",
+      "instrument": "glass",
+      "scale": "major",
+      "root_midi": 48,
+      "tempo_bpm": 84,
+      "branch": "B",
+      "notes": 5,
+      "pitches": [
+        54,
+        47,
+        54,
+        69,
+        67
+      ],
+      "peak_before_normalization": 0.24018231391833533,
+      "duration_seconds": 7.0,
+      "mp3_sha256": "57ec66d310b78423d37fc0a36cc2abfae424bb6f2921da6cbc817b5e99ab05b8"
+    }
+  ],
+  "checks": {
+    "same_semantic_fingerprint_all_renditions": true,
+    "different_absolute_pitches_by_seven_semitones": true,
+    "unchanged_pairwise_pitch_intervals_under_transposition": true,
+    "unchanged_symbolic_onsets_but_different_performance_tempo": true,
+    "distinct_possible_future_branches": true,
+    "symbolic_and_midi_round_trips_randomized": 600,
+    "midi_compatible": "SMF format 0, HMX1 inscription in text meta-event",
+    "audio_semantic_decoding": "not claimed; metadata preserves lossless meaning",
+    "relationship_influences_audio_midi_note_mapping": true
+  },
+  "graph_harmony_test": {
+    "notes_with_incoming_relations_affecting_pitches": [
+      {
+        "id": "choose",
+        "with": 54,
+        "without": 55,
+        "delta": -1
+      },
+      {
+        "id": "joy",
+        "with": 61,
+        "without": 60,
+        "delta": 1
+      },
+      {
+        "id": "loss",
+        "with": 47,
+        "without": 45,
+        "delta": 2
+      },
+      {
+        "id": "whole",
+        "with": 69,
+        "without": 67,
+        "delta": 2
+      }
+    ],
+    "method": "Compare sounding note pitches against identical semantic notes with all graph associations deleted"
+  }
+}

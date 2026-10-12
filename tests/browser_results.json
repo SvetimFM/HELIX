@@ -1,0 +1,18 @@
+{
+  "cross_app": {
+    "imported_notes": 6,
+    "audio": "started; simulated transfer"
+  },
+  "desktop": {
+    "ready": true,
+    "errors": []
+  },
+  "tablet": {
+    "ready": true,
+    "errors": []
+  },
+  "phone": {
+    "ready": true,
+    "errors": []
+  }
+}
